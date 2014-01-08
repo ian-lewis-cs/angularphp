@@ -6,7 +6,8 @@
 	//if a php file is found in the root folder, use it
 	if (file_exists("$query.php"))
 	{
-		include ("$query.php");
+		if ($query!='router')
+			include ("$query.php");
 		die();
 	}
 	//if a php file exists in the api folder, call its function
@@ -23,4 +24,4 @@
 	}
 	//handle 404 error
 	echo 'file not found';
- ?
+?>
