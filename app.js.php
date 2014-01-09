@@ -43,9 +43,9 @@ foreach ($php_files as $php_file)
 		$func=str_replace('.php','',$php_file);
 		echo "this.$func=function (js_data,success_fn) {
 				$http({
-				url: '/$func',
+				url: '/$func.api',
 				method: \"POST\",
-				data: js_data,
+				data: json=js_data,
 				headers: {'Content-Type': 'application/json'}
 			}).success(function (json) {var data=angular.fromJson(json);success_fn(data);});
 			};\n";
