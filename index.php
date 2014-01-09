@@ -1,8 +1,9 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="app">
 	<head>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
-		<script type="text/javascript" src="app.js"></script>
+		<script src="http://code.angularjs.org/1.2.7/angular.min.js"></script>
+		<script src="http://code.angularjs.org/1.2.7/angular-route.min.js"></script>
+		<script type="text/javascript" src="app.js.php"></script>
 		<style>
 		.left
 		{
