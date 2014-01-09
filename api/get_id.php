@@ -1,6 +1,6 @@
 <?php
 function get_id($data)
 {
-	return array('id'=>1);
+	return array('id'=>$data);
 }
 ?>
