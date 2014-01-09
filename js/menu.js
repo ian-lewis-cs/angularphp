@@ -4,7 +4,7 @@ app.controller("menu", function ($scope, api) {
 		api.get_id(
 				$scope.username,
 				function (data)
-				{alert(data);}
+				{alert(data.id);}
 					);
 	}
 });
