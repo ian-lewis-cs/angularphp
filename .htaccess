@@ -1,3 +1,4 @@
-RewriteEngine on
-RewriteBase /
-ErrorDocument 404 /router.php
+RewriteEngine On
+RewriteRule ^(.*)\.api router\.php?api=$1
+RewriteRule app\.js app\.js\.php
+# ErrorDocument 404 /router.php
