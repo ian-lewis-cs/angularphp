@@ -17,5 +17,5 @@
                 }
         }
         //handle 404 error
-        echo 'file not found';
+        echo 'api function not found';
 ?>
