@@ -5,24 +5,36 @@
 		<script src="http://code.angularjs.org/1.2.7/angular-route.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 		<style>
-		.left
+		.header
+		{
+			font-size: 50px;
+			font-color: navy;
+			text-align: center;
+		}
+		.menu
 		{
 			float: left;
-			width: 50%;
+			width: 20%;
+			background-color: #eee;
 		}
-		.right
+		.content
 		{
 			float: right;
-			width: 50%;
+			width: 80%;
+			text-align: center;
 		}
 		</style>
 	</head>
 	<body>
-		<div class="left">
-			<a href="#/">home</a><br />
-			<a href="#/menu">menu</a><br />
+		<div class="header">AngularPHP</div>
+		<div class="menu">
+			<ul>
+			<li><a href="#/">home</a></li>
+			<li><a href="#/client">Simple client example</a></li>
+			<li><a href="#/server">Server API example</a></li>
+			</ul>
 		</div>
-		<div class="right" ng-view>
+		<div class="content" ng-view>
 		</div>
 	</body>
 </html>
