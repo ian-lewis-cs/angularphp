@@ -15,7 +15,7 @@ $view_files = scandir($dir.'/views');
 $routeProvider='$routeProvider';$http='$http';
 
 //define the routing for angular's SPA
-echo "var app = angular.module(\"app\");\n";
+echo "var app = angular.module('app',['ngRoute']);\n";
 echo "app.config(function ($routeProvider) {\n";
 
 foreach ($view_files as $view_file)
