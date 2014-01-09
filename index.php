@@ -3,7 +3,7 @@
 	<head>
 		<script src="http://code.angularjs.org/1.2.7/angular.min.js"></script>
 		<script src="http://code.angularjs.org/1.2.7/angular-route.min.js"></script>
-		<script type="text/javascript" src="app.js.php"></script>
+		<script type="text/javascript" src="app.js"></script>
 		<style>
 		.left
 		{
