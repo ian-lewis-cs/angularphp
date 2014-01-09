@@ -13,6 +13,7 @@
 	//if a php file exists in the api folder, call its function
 	if (file_exists("api/$query.php"))
 	{
+		include ("api/$query.php");
 		if (function_exists($query))
 		{
 			$data = file_get_contents("php://input");
